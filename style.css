@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@200&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.offset::before{
+    display: block;
+    content: "";
+    height: 8rem;
+}
+
+.navbar{
+    position: fixed;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    background: rgba(red, green, blue, alpha) !important;
+    padding: 20px 0;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    padding-left: 20px;
+
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: seagreen;
+}
+
+.heading-content{
+    position: absolute;
+    top: 40%;
+    width: 100;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 1cm;
+    font-weight: 300;
+    color: rgb(230, 167, 123);
+    font-family: monospace;
+}
+
+.heading-content h1{
+    font-size: 1cm;
+    font-weight: bolder;
+    color: seashell;
+    font-family: monospace;
+}
+
+.heading-content p{
+    font-size: 0.5cm;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: rgb(245, 248, 252);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 5px;
+}
+
+/*-----------about me start----------*/
+#About .btn{
+    border:2px solid green;
+    width: 25%;
+    padding: 15px 15px;
+    background: rgb(14, 13, 13);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#About .btn a{
+    color: ivory;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#About .btn:hover{
+    -webkit-box-shadow: 10px 10px 54px 10px rgba(97,95,97,1);
+    -moz-box-shadow: 10px 10px 54px 10px rgb(124, 120, 124);
+    box-shadow: 10px 10px 54px 10px rgba(97,95,97,1);
+}
+
+/*-----------about me end----------*/
+
+/*-----------Skill start----------*/
+
+#Skills .single-skill {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 150px;
+}
+
+#Skills .single-skill span {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#Skills .single-skill .custom-progress {
+    background-color: #e9ecef;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 5px;
+    position: relative;
+}
+
+#Skills .single-skill .custom-progress .progress-bar {
+    background: linear-gradient(to right, #3abe66 0%, #022214 100%);
+    height: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*-----------skill end----------*/
+
+
+/*-----------Contactme start----------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg-contact100 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-contact100 {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.head{
+    border:2px solid green;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: -40px;
+    -webkit-box-shadow: 10px 10px 54px 10px rgba(97,95,97,1);
+-moz-box-shadow: 10px 10px 54px 10px rgb(124, 120, 124);
+box-shadow: 10px 10px 54px 10px rgba(97,95,97,1);
+}
+.effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid rgb(18, 83, 5);
+}
+.effect-1 ~ .Focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.4s;
+}
+.effect-1:focus ~ .Focus-borde{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+.btn1{
+    background: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}
+
+.btn1{
+    border:2px solid green;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn1:hover{
+    -webkit-box-shadow: 10px 10px 54px 10px rgba(97,95,97,1);
+    -moz-box-shadow: 10px 10px 54px 10px rgb(124, 120, 124);
+    box-shadow: 10px 10px 54px 10px rgba(97,95,97,1);
+}
+
+/*-----------Media query----------*/
+@media screen and (max-width: 767px) {
+    /*-----------tablet----------*/
+    .navbar {
+        letter-spacing: 0.3rem;
+        padding: 10px 0;
+    }
+
+    .heading-content h5{
+        font-size: 0.75cm;
+    }
+    
+    .heading-content h1{
+        font-size: 0.75cm;
+    }
+    
+    .heading-content p{
+        font-size: 0.4cm;
+    }
+}
+
+
+
+@media screen and (max-width: 479px) {
+    /*-----------smartphones----------*/
+    .navbar {
+        letter-spacing: 0.3rem;
+        padding: 10px 0;
+    }
+
+    .heading-content h5{
+        font-size: 0.5cm;
+    }
+    
+    .heading-content h1{
+        font-size: 0.5cm;
+    }
+    
+    .heading-content p{
+        font-size: 0.25cm;
+    }
+}
